@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useRef} from "react";
 import photo1 from "./img/slideshow/1.jpg"
 import photo2 from "./img/slideshow/2.jpg"
 import photo3 from "./img/slideshow/3.jpg"
@@ -30,22 +30,23 @@ const Carousel = () => {
     }
 
 
-    function fadeOutPhoto() {
-        setPhotoTransition('fade-out')
+    function fadePhoto(evt) {
+        if (evt.animationName === 'fade-in') {
+            setPhotoTransition('fade-out')
+        }
+        else if (evt.animationName === 'fade-out') {
+           
+            changePhoto()
+            setPhotoTransition('fade-in')
+        }
     }
 
-    function fadeInPhoto() {
-        changePhoto()
-        //but also apply a fade in transition
-        setPhotoTransition('fade-in')
-    }
-   
-
+ 
     return (
         <>
             <div>
 
-            <img id="carousel" ref={carouselRef} className={photoTransition} src={currPhoto} onAnimationEnd={}></img>
+            <img id="carousel" ref={carouselRef} className={photoTransition} src={currPhoto} onAnimationEnd={fadePhoto}></img>
 
             </div>
         </>
