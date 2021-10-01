@@ -40,16 +40,16 @@
 
 .carousel-container {
 
-    width: 100vw;
+    width: calc(100vw-(100vw - 100%));
     box-sizing: border-box;
     padding-right: 3vw;
     padding-left: 3vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    border: 1px solid magenta;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 #carouselimg {

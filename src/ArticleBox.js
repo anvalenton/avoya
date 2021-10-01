@@ -1,6 +1,5 @@
 import React from "react";
 import "./ArticleBox.css";
-//would import separate css file if styling was more complex
 
 
 

@@ -2,12 +2,9 @@
 
 body, html {
   background-color: #e6e6e6;
-  width: 100vw;
- 
-
+  width: calc(100vw-(100vw - 100%));
+  /*100% is width without scroll bars. 100vw is width with scrollbars */
 }
-
-
 
 .menu-div {
   background-color: #cccccc;
@@ -15,36 +12,70 @@ body, html {
   justify-content: space-between;
   align-items: center;
   padding: 2vw;
-  height: 10vh;
+  height: 8vh;
   border-bottom: .5vh solid rgb(215, 215, 218);
-
   border-top: .7vh solid rgba(116, 115, 115, 0.632);
 }
 
 .logo {
-  margin-left: 2vw;
+  margin-left: 1vw;
+  width: 15%;
+ 
 }
 .menu-button-container {
- 
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 1vw;
 
 }
 
 .menubutton {
-  width: 8vw;
+  width: 7.5vw;
   height: 70%;
   border: .2px solid rgba(116, 115, 115, 0.632);
   color: white;
-  font-size: 100%;
-
+  font-size: 1.5vw;
   background-image: linear-gradient(to top, #33b6ea,#aedbed );
-  box-shadow:
+  box-shadow: 0 1px 3px 0 rgba(75, 75, 75, 0.4);
        
-         0 1px 3px 0 rgba(75, 75, 75, 0.4);
-       
+}
+
+.menubutton:nth-child(1) {
+
+  border-radius: 5px 0 0 5px;
+}
+
+.menubutton:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+
+  .logo {
+    width: 20%;
+  }
+
+  .menubutton {
+    width: 15vw;
+    font-size: 3vw;
+  }
+  
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .logo {
+    width: 20%;
+  }
+
+  .menubutton {
+    width: 10vw;
+    font-size: 2.5vw;
+  }
+  
+  
 }
 
 .bottomsection {
@@ -54,6 +85,15 @@ body, html {
   align-items: flex-start;
   padding: 3vw;
 
+}
+
+@media screen and (max-width: 600px) {
+
+  .bottomsection {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 h2 {
@@ -67,6 +107,22 @@ h2 {
 
 }
 
+@media screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 7vw;
+  }
+  
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) and (orientation: portrait) {
+
+  h2 {
+    font-size: 3vw;
+  }
+  
+  
+}
 
 ul {
   list-style: none; /* Remove default bullets */
@@ -76,9 +132,73 @@ ul {
 
 ul li::before {
   content: "\2713"; 
-  color: rgb(79, 147, 87); /* Change the color */
+  color: rgb(68, 180, 81);
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em;
   margin-left: 0; 
+  margin-right: .5vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw-(100vw - 100%));
+  background-color: #cccccc;
+  height: 7vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  color:rgba(70, 70, 70, 0.632);
+}
+
+.copyright-container {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.3vw;
+ 
+}
+
+.footer-button-container {
+  
+  transform: translateX(5%);
+}
+.footerbutton {
+  background-color: transparent;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  color:rgba(70, 70, 70, 0.632);
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.footerbutton:nth-child(n+1):nth-child(n+2) {
+  border-left: 1px solid gray;
+  
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .copyright-container {
+    font-size: 3vw;
+  }
+
+  .footerbutton {
+    font-size: 3vw;
+  }
+  
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) and (orientation: portrait) {
+
+  .copyright-container {
+    font-size: 2.5vw;
+  }
+
+  .footerbutton {
+    font-size: 2.5vw;
+  }
+  
+  
 }

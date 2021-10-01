@@ -38,8 +38,8 @@ function App() {
     
 
       <footer>
-        <div>
-         © Copyright. All Rights Reserved.
+        <div className="copyright-container">
+         © Copyright, All Rights Reserved.
         </div>
         <div className='footer-button-container'>
                 <button className='footerbutton'>Home</button>
