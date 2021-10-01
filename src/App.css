@@ -1,9 +1,10 @@
 
 
+
 body, html {
   background-color: #e6e6e6;
-  width: calc(100vw-(100vw - 100%));
-  /*100% is width without scroll bars. 100vw is width with scrollbars */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .menu-div {
@@ -121,7 +122,6 @@ h2 {
     font-size: 3vw;
   }
   
-  
 }
 
 ul {
@@ -144,12 +144,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100vw-(100vw - 100%));
+  width: 100%;
   background-color: #cccccc;
   height: 7vh;
   padding-left: 3vw;
   padding-right: 3vw;
   color:rgba(70, 70, 70, 0.632);
+  box-sizing: border-box;
 }
 
 .copyright-container {
@@ -162,6 +163,7 @@ footer {
   
   transform: translateX(5%);
 }
+
 .footerbutton {
   background-color: transparent;
   border: none;
@@ -175,7 +177,6 @@ footer {
 .footerbutton:nth-child(n+1):nth-child(n+2) {
   border-left: 1px solid gray;
   
-
 }
 
 @media screen and (max-width: 600px) {
