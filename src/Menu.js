@@ -7,13 +7,13 @@ const Menu = () => {
 
     return (
         <>
-        <div>
-            <img src={logo}></img>
-            <div>
-                <button>Home</button>
-                <button>Uno</button>
-                <button>Dos</button>
-                <button>Tres</button>
+        <div className='menu-div'>
+            <img className="logo" src={logo} alt='logo'></img>
+            <div className='menu-button-container'>
+                <button className='menubutton'>HOME</button>
+                <button className='menubutton'>UNO</button>
+                <button className='menubutton'>DOS</button>
+                <button className='menubutton'>TRES</button>
             </div>
         </div>
         </>

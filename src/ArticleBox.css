@@ -1,0 +1,22 @@
+
+.articlebox {
+    width: 30vw;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-img {
+    border: 4px solid white;
+    box-shadow: 3px 3px 2px 0px rgba(128, 128, 128, 0.459);
+}
+
+.article-text {
+    font-size: 1.2vw;
+    text-align: left;
+    color: rgb(40, 39, 39);
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1vh;
+    line-height: 3vh;
+    
+}

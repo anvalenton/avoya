@@ -1,0 +1,59 @@
+
+.comment-boxcontainer {
+   
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 30vw;
+    
+}
+
+.comment-container {
+    height: 100%;
+    width: 100%;
+    background-color: #d8d8d8;
+    box-shadow: inset 0 0 20px 1px rgba(128, 128, 128, 0.377);
+}
+.comment-subcontainer {
+    
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+}
+
+.highlight {
+    background-color: #9ec9f048;
+}
+
+
+
+.comment-div {
+    color: rgb(40, 39, 39);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.7vw;
+    padding-left: 1vw;
+}
+
+.name-date-container {
+    padding-left: 1vw;
+}
+
+.namespan {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight:bolder;
+    color: rgb(58, 58, 58)
+
+}
+
+time {
+    margin-left: 1vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 1.2vw;
+}

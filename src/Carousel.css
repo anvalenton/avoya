@@ -14,7 +14,7 @@
 @keyframes fade-in {
     
     from {
-        transform: translateX(50%);
+        transform: translateX(20%);
         opacity: 0;
     }
 
@@ -32,11 +32,28 @@
         opacity: 1;
     }
 
-  
-
     100% {
         transform: translateX(-50%);
         opacity: 0;
     }
 }
 
+.carousel-container {
+
+    width: 100vw;
+    box-sizing: border-box;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border: 1px solid magenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselimg {
+    border: 4px solid white;
+    box-shadow: 3px 3px 2px 0px rgba(128, 128, 128, 0.459);
+    width: 96vw;
+}

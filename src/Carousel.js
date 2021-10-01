@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useState} from "react";
 import photo1 from "./img/slideshow/1.jpg"
 import photo2 from "./img/slideshow/2.jpg"
 import photo3 from "./img/slideshow/3.jpg"
@@ -8,12 +8,9 @@ import "./Carousel.css";
 
 const Carousel = () => {
 
-    const [photoArr, setPhotoArr] = useState([photo1, photo2, photo3])
-    const [currPhoto, setCurrPhoto] = useState(photo3);
+    const [photoArr, setPhotoArr] = useState([{source: photo1, info: 'some photo description'}, {source:photo2, info: 'some photo description'}, {source:photo3, info: 'some photo description'}])
+    const [currPhoto, setCurrPhoto] = useState({source:photo3, info:'some photo description'});
     const [photoTransition, setPhotoTransition] = useState('fade-in')
-
-    const carouselRef = useRef(null);
-
 
     function changePhoto() {
 
@@ -44,9 +41,9 @@ const Carousel = () => {
  
     return (
         <>
-            <div>
+            <div className='carousel-container'>
 
-            <img id="carousel" ref={carouselRef} className={photoTransition} src={currPhoto} onAnimationEnd={fadePhoto}></img>
+            <img id="carouselimg" className={photoTransition} src={currPhoto.source} alt={currPhoto.info} onAnimationEnd={fadePhoto}></img>
 
             </div>
         </>

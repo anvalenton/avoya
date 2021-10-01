@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+
+body, html {
+  background-color: #e6e6e6;
+  width: 100vw;
+ 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-div {
+  background-color: #cccccc;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 2vw;
+  height: 10vh;
+  border-bottom: .5vh solid rgb(215, 215, 218);
+
+  border-top: .7vh solid rgba(116, 115, 115, 0.632);
+}
+
+.logo {
+  margin-left: 2vw;
+}
+.menu-button-container {
+ 
+  height: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+
+.menubutton {
+  width: 8vw;
+  height: 70%;
+  border: .2px solid rgba(116, 115, 115, 0.632);
   color: white;
+  font-size: 100%;
+
+  background-image: linear-gradient(to top, #33b6ea,#aedbed );
+  box-shadow:
+       
+         0 1px 3px 0 rgba(75, 75, 75, 0.4);
+       
 }
 
-.App-link {
-  color: #61dafb;
+.bottomsection {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3vw;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: rgba(65, 64, 64, 0.79);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  align-self: flex-start;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  font-size: 2.3vw;
+
+}
+
+
+ul {
+  list-style: none; /* Remove default bullets */
+  align-self: flex-start;
+  padding-left: 1vw;
+}
+
+ul li::before {
+  content: "\2713"; 
+  color: rgb(79, 147, 87); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em;
+  margin-left: 0; 
 }
