@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/avoya/static/css/main.4dffa43c.chunk.css",
+    "main.js": "/avoya/static/js/main.7e45e4c7.chunk.js",
+    "main.js.map": "/avoya/static/js/main.7e45e4c7.chunk.js.map",
+    "runtime-main.js": "/avoya/static/js/runtime-main.41ff3ea0.js",
+    "runtime-main.js.map": "/avoya/static/js/runtime-main.41ff3ea0.js.map",
+    "static/js/2.366c19f7.chunk.js": "/avoya/static/js/2.366c19f7.chunk.js",
+    "static/js/2.366c19f7.chunk.js.map": "/avoya/static/js/2.366c19f7.chunk.js.map",
+    "static/js/3.17155db7.chunk.js": "/avoya/static/js/3.17155db7.chunk.js",
+    "static/js/3.17155db7.chunk.js.map": "/avoya/static/js/3.17155db7.chunk.js.map",
+    "index.html": "/avoya/index.html",
+    "static/css/main.4dffa43c.chunk.css.map": "/avoya/static/css/main.4dffa43c.chunk.css.map",
+    "static/js/2.366c19f7.chunk.js.LICENSE.txt": "/avoya/static/js/2.366c19f7.chunk.js.LICENSE.txt",
+    "static/media/1.a69b2065.jpg": "/avoya/static/media/1.a69b2065.jpg",
+    "static/media/2.1151b7ad.jpg": "/avoya/static/media/2.1151b7ad.jpg",
+    "static/media/3.26745e7d.jpg": "/avoya/static/media/3.26745e7d.jpg",
+    "static/media/column-center.ae6b319a.jpg": "/avoya/static/media/column-center.ae6b319a.jpg",
+    "static/media/column-left.54a6c465.jpg": "/avoya/static/media/column-left.54a6c465.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41ff3ea0.js",
+    "static/js/2.366c19f7.chunk.js",
+    "static/css/main.4dffa43c.chunk.css",
+    "static/js/main.7e45e4c7.chunk.js"
+  ]
+}
