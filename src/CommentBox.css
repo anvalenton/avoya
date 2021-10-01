@@ -2,9 +2,12 @@
 .comment-boxcontainer {
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
     width: 30vw;
     margin-left: .5vw;
+   
 }
 
 
@@ -19,19 +22,21 @@
 .comment-container {
     height: 100%;
     width: 100%;
-    padding-top: 1vh;
     background-color: #d8d8d8;
+    padding-top: 1vh;
     box-shadow: inset 0 0 20px 1px rgba(128, 128, 128, 0.377);
 }
 .comment-subcontainer {
-    
-    height: 20%;
+   
+    height: 19%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 1vw;
+    padding-left: 1.5vw;
     padding-right: 1vw;
+    padding-top: .2vw;
+   
     
 
 }
@@ -46,8 +51,10 @@
     color: rgb(69, 69, 69);
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 1.7vw;
-    padding-left: 1vw;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+    height: 50%;
 }
 
 @media screen and (max-width: 600px) {
